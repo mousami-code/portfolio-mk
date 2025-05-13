@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Chatbot.module.css';
+import styles from './chatbot.module.css';
 
 const Chatbot = () => {
   const [showChatbot, setShowChatbot] = useState(false);
