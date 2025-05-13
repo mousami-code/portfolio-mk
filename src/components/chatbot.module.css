@@ -1,0 +1,86 @@
+/* Chatbot.module.css */
+
+.chatbotContainer {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 300px;
+    background-color: #222; /* Dark gray background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .chatbotContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .chatbotHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .chatbotHeader .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #666; /* Light gray background for chatbot icon */
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .chatbotHeader .text {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .chatbotMessage {
+    background-color: #444; /* Slightly lighter gray for message box */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .botMessage {
+    background-color: #777; /* Light gray background for bot's messages */
+    color: white;
+  }
+  
+  .chatbotButton {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .chatbotButton a {
+    display: block;
+    background-color: #555; /* Dark gray button */
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .chatbotButton a:hover {
+    background-color: #444; /* Darker gray on hover */
+  }
+  
+  .chatbotButton a:active {
+    background-color: #333; /* Even darker gray when clicked */
+  }
+  

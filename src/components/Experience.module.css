@@ -1,0 +1,165 @@
+/* General Layout */
+.experienceSection {
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+/* Subtle Heading with New Color */
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffba00; /* Updated heading color (gold/yellow) */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Floating Colorful Circles */
+.blob1,
+.blob2 {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    animation: float 6s ease-in-out infinite;
+}
+
+.blob1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    animation-delay: -2s;
+}
+
+.blob2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 10%;
+    animation-delay: -4s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-left: 3px solid #fff;  /* Vertical line for the timeline */
+}
+
+.timelineItem {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px 0;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timelineItem:hover {
+    background: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.timelineCircle {
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s;
+}
+
+.timelineItem:nth-child(odd) .timelineCircle {
+    left: -10px;
+}
+
+.timelineItem:nth-child(even) .timelineCircle {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.timelineContent {
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.timelineContent h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #e1e1e1;
+    transition: color 0.3s;
+}
+
+.timelineContent p {
+    font-size: 1rem;
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+.timelineContent strong {
+    color: #f9f9f9;
+}
+
+.timelineContent .year {
+    font-weight: bold;
+    color: #ffba00; /* Highlighted year color */
+}
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding: 0 20px;
+    }
+
+    .timelineItem {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .timelineCircle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .timelineContent h3 {
+        font-size: 1.2rem;
+    }
+
+    .timelineContent p {
+        font-size: 0.9rem;
+    }
+}

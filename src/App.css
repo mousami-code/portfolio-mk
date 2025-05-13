@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* About Me Section Styling */
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 5%;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Section */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageContainer {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profileImg:hover {
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.role {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skillItem p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skillBar {
+  width: 100%;
+  background-color: #444;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.skillFill {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  animation: fillBar 2s ease-in-out infinite;
+}
+
+@keyframes fillBar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

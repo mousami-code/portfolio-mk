@@ -1,0 +1,65 @@
+.contactSection {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .heading h2 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+    color: #ffba00; /* Updated heading color (gold/yellow) */
+    position: relative;
+    z-index: 2;
+  }
+  
+  .heading p {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  .contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contactGrid div {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .contactGrid div:hover {
+    background-color: #1e1e1e;
+  }
+  
+  .contactGrid span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #bbb;
+  }
+  
+  .contactGrid a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contactGrid a:hover {
+    color: #1e90ff;
+  }
+  

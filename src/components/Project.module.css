@@ -1,0 +1,240 @@
+/* Project Section */
+.projectSection {
+    background-color: #000;
+    padding: 60px 30px;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffba00; /* Updated heading color (gold/yellow) */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Floating Colorful Circles */
+  .blob1,
+  .blob2 {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .blob1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    animation-delay: -2s;
+  }
+  
+  .blob2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 10%;
+    animation-delay: -4s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Project Row & Card Flip Styling */
+  .projectRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .flipCard {
+    background: transparent;
+    width: 280px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .flipCardFront,
+  .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .flipCardFront {
+    background-color: var(--front-color);
+    color: white;
+  }
+  
+  .flipCardBack {
+    background-color: var(--back-color);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flipCardFront h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .flipCardBack p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Show More Button */
+  .showMoreButton {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .showMoreButton button {
+    background: linear-gradient(45deg, #4a5568, #2d3748); /* Muted gradient background */
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px; /* Soft, rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .showMoreButton button:hover {
+    background: linear-gradient(45deg, #2d3748, #4a5568); /* Slight change on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow on hover */
+  }
+  
+  /* Why Hire Me Section */
+  .hireSection {
+    background-color:black;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  
+  .hireSection h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffba00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  
+  .hireSection p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .hireSection ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .hireSection ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .hireSection ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffba00;
+    font-size: 1.5rem;
+    top: 0;
+  }
+  .hireSection {
+    background-color: #000; /* Pure black background */
+    color: #f5f5f5;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hireSection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hireSection p {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+  
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .hireCard {
+    background-color: #1a1a1a;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  }
+  
+  .hireCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    color: #9ca3af; /* Tailwind-style cool gray */
+    margin-bottom: 0.8rem;
+    display: inline-block;
+  }
+  
+  
