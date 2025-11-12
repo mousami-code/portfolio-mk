@@ -93,10 +93,10 @@ export default function Hero() {
               href="/contact"
               className="group relative px-8 py-4 bg-girly-pink border-2 border-girly-pink font-orbitron font-bold text-lg tracking-wider overflow-hidden hover:shadow-[0_0_30px_rgba(255,107,157,0.8)] transition-all duration-300"
             >
-              <span className="relative z-10 text-girly-black">LET'S CONNECT ✨</span>
+              <span className="relative z-10 text-girly-black">LETS CONNECT ✨</span>
               <div className="absolute inset-0 bg-girly-purple transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               <span className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-black">
-                LET'S CONNECT ✨
+                LETS CONNECT ✨
               </span>
             </a>
             

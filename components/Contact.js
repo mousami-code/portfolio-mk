@@ -74,10 +74,10 @@ export default function Contact() {
             <div className="flex-1 h-px bg-gradient-to-l from-transparent to-girly-pink"></div>
           </div>
           <h2 className="font-orbitron text-5xl md:text-6xl font-black bg-gradient-to-r from-girly-pink via-girly-purple to-girly-lavender bg-clip-text text-transparent mb-4 animate-shimmer bg-[length:200%_auto]">
-            LET'S CONNECT ✨
+            LETS CONNECT ✨
           </h2>
           <p className="font-mono text-gray-400 max-w-2xl mx-auto">
-            Ready to build something that survives? Let's connect and engineer the future.
+            Ready to build something amazing? Lets connect and engineer the future.
           </p>
         </motion.div>
 
@@ -192,8 +192,8 @@ export default function Contact() {
             {/* Quote */}
             <div className="p-6 border-l-4 border-wasteland-rust bg-wasteland-dark/30">
               <p className="font-mono text-sm text-gray-400 italic leading-relaxed">
-                "In the wasteland of code, only the resilient systems survive. 
-                Let's build infrastructure that stands the test of time."
+                In the world of code, only the resilient systems survive. 
+                Lets build infrastructure that stands the test of time.
               </p>
               <p className="font-mono text-xs text-wasteland-rust mt-3">
                 — Mousami Kalidindi

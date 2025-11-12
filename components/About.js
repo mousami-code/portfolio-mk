@@ -27,7 +27,7 @@ export default function About() {
             <div className="flex-1 h-px bg-gradient-to-r from-wasteland-rust to-transparent"></div>
           </div>
           <h2 className="font-orbitron text-5xl md:text-6xl font-black text-wasteland-sand mb-4">
-            THE SURVIVOR'S PROFILE
+            THE SURVIVORS PROFILE
           </h2>
         </motion.div>
 
