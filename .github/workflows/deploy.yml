@@ -1,0 +1,33 @@
+name: Deploy Portfolio 🚀
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Dependencies 📦
+        run: npm ci
+
+      - name: Build 🔨
+        run: npm run build
+
+      - name: Deploy Status ✅
+        run: |
+          echo "✨ Build completed successfully!"
+          echo "🚀 Your portfolio is ready to deploy!"
+          echo "📝 Use Vercel for automatic deployment"
+
